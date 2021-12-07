@@ -11,6 +11,8 @@
     <h1> Vibez Elektro Shop</h1>
     <button id="toggle-button"onclick="h1Changer()">Change Heading</button>
     <button id="toggle-button"onclick="backgroundChanger()">Change Background Color</button>
+    <button id="toggle-button"onclick="footerChanger()">Change Address</button>
+
 
     <table>
         <tr>
@@ -72,7 +74,7 @@
             alert("it works")
             let heading = document.getElementsByTagName("h1")
                 for( let headings of heading){
-                    headings.innerText = "vibez"
+                    headings.innerText = "VIBEZ"
                 }
                   
         }
@@ -80,6 +82,15 @@
         const backgroundChanger = function(){
             let background = document.getElementsByTagName("body")[0]
             background.style.backgroundColor = "aqua"
+        }
+
+
+        const footerChanger = function(){
+            let address = document.getElementsByTagName("footer")
+            for( let fake of address){
+                fake.innerText = "Vibez Alter Wall 32 Grubmah"
+        
+            }
         }
     </script>
 </body>

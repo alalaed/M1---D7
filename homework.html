@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vibez Elektro Shop</title>
 </head>
-<body>
+
+<body style="background-color: red;">
     <h1> Vibez Elektro Shop</h1>
+    <button id="toggle-button"onclick="h1Changer()">Change Heading</button>
+    <button id="toggle-button"onclick="backgroundChanger()">Change Background Color</button>
+
     <table>
         <tr>
           <th><Product></th>
@@ -59,8 +63,26 @@
             Neuer Wall 23
             Hamburg
           </p>
-          <input type="text" name="Contact Us" id="MessageBoard">
+          <input type="text" name="Message Board" id="MessageBoard" placeholder="Contact Us">
       </footer>
-    
+
+    <script type="text/javascript">
+        
+        const h1Changer = function(){
+            alert("it works")
+            let heading = document.getElementsByTagName("h1")
+                for( let headings of heading){
+                    headings.innerText = "vibez"
+                }
+                  
+        }
+
+        const backgroundChanger = function(){
+            let background = document.getElementsByTagName("body")[0]
+            background.style.backgroundColor = "aqua"
+        }
+    </script>
 </body>
+
+
 </html>
